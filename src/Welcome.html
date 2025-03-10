@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Bodyload(){
+           document.querySelector("p").innerHTML=localStorage.getItem("uname");
+           document.querySelector("b").innerHTML=localStorage.getItem("password");
+        }
+    </script>
+</head>
+<body onload="Bodyload()">
+    <h1>Welcome</h1>
+    <p></p>
+    <b></b>
+</body>
+</html>

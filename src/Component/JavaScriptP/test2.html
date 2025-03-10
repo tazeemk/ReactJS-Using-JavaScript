@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function bodyLoad(){
+    var btn = document.createElement("button");
+    btn.innerHTML = "Click me";
+    btn.addEventListener("click", ()=>{
+        alert("updated :");
+    })
+    document.getElementById("container").appendChild(btn);
+    document.getElementById("btnClick").addEventListener("click", ()=>{
+        alert("Inserted :")
+    })
+    }
+</script>
+</head>
+<body onload="bodyLoad()">
+    
+<div id = "container">
+
+<button id="btnClick">button</button>
+</div>
+
+</body>
+</html>

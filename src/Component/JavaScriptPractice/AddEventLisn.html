@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function f1(){
+   var x=document.createElement("button");
+   x.innerHTML='update';
+    document.getElementById('bdy').appendChild(x).value;
+    x.addEventListener("click",function(){
+        alert("update");
+    })
+    
+    document.getElementById('btn1').addEventListener("click",function(){
+        alert("Inserted");
+    });
+    }
+</script>
+</head>
+<body onload="f1()">
+   <div id="bdy" > 
+<button id="btn1"> Insert</button>
+
+</div>
+</body>
+</html>

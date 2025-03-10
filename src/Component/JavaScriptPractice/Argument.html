@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function f1(obj,...p){
+        var[id,no,name,cites]=p;
+           document.writeln(`button is ${obj.id} ,name=${name} cities :${cites}`);
+
+    }
+</script>
+</head>
+<body >
+    <div>
+    <input type="text">
+     <button onclick="f1(this,1,'devang',['hyd','mumb'])">submit </button>     
+</div>
+</body>
+</html>

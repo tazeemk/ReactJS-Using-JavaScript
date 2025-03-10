@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function SubmitUser(){
+
+  var username =document.getElementById("username").value;
+   var pswod = document.getElementById("psword").value;
+         localStorage.setItem("password",pswod); 
+         localStorage.setItem("uname", username);
+        location.href="Welcome.html";
+    
+
+        }
+    </script>
+</head>
+<body>
+    
+
+<input type="text" id="username"/> 
+<input type="password" id="psword"/>
+<input type="submit" value="Send" onclick="SubmitUser()">
+</body>
+</html>

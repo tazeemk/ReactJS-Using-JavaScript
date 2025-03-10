@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    
+        
+    function f1(){
+        if(document.getElementById('box').checked){
+          document.getElementById('per_adr').style.display="none";
+        }else{
+            document.getElementById('per_adr').style.display="block";
+            
+        }
+    }
+</script>
+<body>
+    
+<div class="container">
+<div>
+    <fieldset id="cur_adr">
+        <legend>Current Address</legend>
+ 
+        <table border="1" align="center">
+    <tr>
+<td>HouseNo</td>
+<td><input type="number" id="a"></td>
+</tr>
+<tr>
+  <td>Dist</td>  
+<td><input type="number" id= "b"></td>
+</tr>
+<tr>
+<td><button id="btn" onclick="f1()">Submit</button></td>
+<td><p id="d"></p></td>
+</tr>
+</table>
+</fieldset>
+<br>
+
+<input type="checkbox" id="box" onclick="f1()">
+Current Address Same Ad Permanent Address 
+<br>
+
+<fieldset id="per_adr">
+    <legend>Current Address</legend>
+
+    <table border="1" align="center">
+<tr>
+<td>N01</td>
+<td><input type="number" id="a"></td>
+</tr>
+<tr>
+<td>N02</td>  
+<td><input type="number" id= "b"></td>
+</tr>
+<tr>
+<td><button id="btn" onclick="f1()">Submit</button></td>
+<td><p id="d"></p></td>
+</tr>
+</table>
+</fieldset>
+
+</div>
+
+</div>
+
+</body>
+</html>
